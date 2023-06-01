@@ -29,3 +29,7 @@ footer{ min-height:50px; background:PapayaWhip; }
   .invalid-drop-target {
     stroke: #940027;
   }
+
+  #paper-container {
+    overflow: hidden !important;
+  }

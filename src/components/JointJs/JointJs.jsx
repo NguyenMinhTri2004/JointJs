@@ -1,6 +1,7 @@
 import React from "react";
 import * as joint from "jointjs";
-
+import { Sidebar } from "../SideBar/Sidebar";
+import SidebarMenu from 'react-bootstrap-sidebar-menu';
 class JointJs extends React.Component {
   componentDidMount() {
     const { dia, shapes, mvc, ui, highlighters, util } = joint;
@@ -754,8 +755,9 @@ class JointJs extends React.Component {
   render() {
    
     return (
-      <div className = "mt-10" >
-        <div id="stencil-container">
+      <div className = "mt-10 overflow-hidden" >
+        <div id="stencil-container" className = "bg-black flex flex-col items-center justify-center text-white" >
+            <Sidebar/>
         </div>
         <div id="paper-container"></div>
         <a target="_blank" href="https://www.jointjs.com">

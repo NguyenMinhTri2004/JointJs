@@ -22,7 +22,7 @@ function App() {
     <div className="App flex flex-col justify-between">
       <Header />
       <JointJs />
-      {/* <Footer/> */}
+      <Footer/>
 
     {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
