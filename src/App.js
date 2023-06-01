@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./index.css";
+import Header from "./components/Header/Header";
+import "./Bootstrap.scss";
+import Footer from "./components/Footer/Footer";
+import "./App.css";
+import JointJs from "./components/JointJs/JointJs";
+import { Helmet } from "react-helmet";
+import useScript from 'react-script-hook';
+
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://resources.jointjs.com/demos/rappid/build/package/rappid.css"
+/>;
 
 function App() {
+//   useScript({
+//     src: 'https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js',
+//     onload: () => console.log('Script loaded!'),
+// });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App flex flex-col justify-between">
+      <Header />
+      <JointJs />
+      {/* <Footer/> */}
+
+    {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js"></script>
+    <script src="https://resources.jointjs.com/demos/rappid/build/package/rappid.js"></script> */}
     </div>
   );
 }
