@@ -2,10 +2,13 @@ import "./index.css";
 import Header from "./components/Header/Header";
 import "./Bootstrap.scss";
 import Footer from "./components/Footer/Footer";
+import Test from "./components/JointJs/Test";
+import Test2 from "./components/JointJs/Test2";
 import "./App.css";
 import JointJs from "./components/JointJs/JointJs";
 import { Helmet } from "react-helmet";
 import useScript from 'react-script-hook';
+
 
 <link
   rel="stylesheet"
@@ -21,7 +24,9 @@ function App() {
   return (
     <div className="App flex flex-col justify-between">
       <Header />
-      <JointJs />
+      {/* <JointJs /> */}
+      <Test/>
+      {/* <Test2/> */}
       <Footer/>
 
     {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>

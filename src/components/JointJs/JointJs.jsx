@@ -50,10 +50,12 @@ class JointJs extends React.Component {
     paper.on("element:magnet:pointerclick", (elementView, evt, magnet) => {
       paper.removeTools();
       elementView.addTools(new dia.ToolsView({ tools: [new Ports()] }));
+      console.log("ihihi")
     });
 
     paper.on("blank:pointerdown cell:pointerdown", () => {
       paper.removeTools();
+      console.log("haahh")
     });
 
     // Stencil
@@ -755,9 +757,9 @@ class JointJs extends React.Component {
   render() {
    
     return (
-      <div className = "mt-10 overflow-hidden" >
+      <div className = "mt-10 flex items-center" >
         <div id="stencil-container" className = "bg-black flex flex-col items-center justify-center text-white" >
-            <Sidebar/>
+  
         </div>
         <div id="paper-container"></div>
         <a target="_blank" href="https://www.jointjs.com">
